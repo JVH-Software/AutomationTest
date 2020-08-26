@@ -1,0 +1,24 @@
+branchName: '${issue.number}-${issue.title}'
+silent: false
+branches:
+  - label: "Type: Feature"
+    name: develop
+    prefix: feature/
+  - label: "Type: Bug"
+    name: develop
+    prefix: bugfix/
+  - label: "Type: Critical Bug"
+    name: master
+    prefix: hotfix/
+  - label: "Type: Optimization"
+    name: develop
+    prefix: optimize/
+  - label: "Type: Documentation"
+    name: develop
+    prefix: document/
+  - label: "Type: Release"
+    name: develop
+    prefix: release/
+  - label: "*"
+    name: develop
+    prefix: issue/
